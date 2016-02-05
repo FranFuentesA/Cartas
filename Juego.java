@@ -20,7 +20,7 @@ public class Juego
     public Juego(int numeroJugadores)
     {
         this.numeroJugadores = numeroJugadores;
-        if (numeroJugadores >=2 && numeroJugadores <=8)
+        if (numeroJugadores >=2 && numeroJugadores <=8)//si introducimos un numero de jugadores entre los aceptados acepta, si no lo deja en 4 por defecto
         {
             numeroJugadores = numeroJugadores;
         }
@@ -29,6 +29,13 @@ public class Juego
             numeroJugadores = 4;
         }
         ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
+        int contador = 0;
+        while(contador < numeroJugadores)
+        {
+            Jugador jugador = new Jugador(contador);
+            jugadores.add(jugador);
+            contador = contador + 1;
+        }
         ArrayList<Carta> mazo = new ArrayList<Carta>();
     }
 
@@ -50,6 +57,10 @@ public class Juego
      */
     public void mostrarCartasJugadores()
     {
+        for(Jugador jugador : jugadores)
+        {
+            System.out.println("Id.Jugador: "+jugador.getId()+"__Cartas en la Mano: "+jugador.cartasQueTieneEnLaMano());
 
+        }
     }
 }

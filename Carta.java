@@ -1,33 +1,59 @@
-
+import java.util.ArrayList;
+import java.util.Arrays;
 /**
- * Write a description of class Carta here.
+ * Write a description of class Mazo here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class Carta
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // Almacena todas las cartas del mazo
+    private int valor;
+
+    private String palo;
 
     /**
-     * Constructor for objects of class Carta
+     * Constructor for objects of class carta
      */
-    public Carta()
+    public Carta(int valor, String palo)
     {
-        // initialise instance variables
-        x = 0;
+        this.valor = valor;
+        this.palo = palo;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Metodo que devuelve el nombre.
      */
-    public int sampleMethod(int y)
+    public String getNombre ()
     {
-        // put your code here
-        return x + y;
+        String nombre = valor + "de" + palo;
+        if (valor == 11){
+            nombre = "Valet de " + palo;
+        }else if (valor == 12){
+            nombre = nombre = "dame de " + palo; 
+        }else if (valor == 13){
+            nombre = nombre = "Roy de " + palo; 
+        }else if (valor == 1){
+            nombre = "As " + palo;          
+        }
+        return nombre;
     }
+    
+    /**
+     * Metodo que devuelve el valor de una carta
+     */
+    public int getValor()
+    {
+        return valor;
+    }
+    
+    /**
+     * Metodo que devuelve el palo de una carta
+     */
+    public String getPalo()
+    {
+        return palo;
+    }
+
 }

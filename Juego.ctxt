@@ -1,8 +1,11 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Juego()
+comment0.params=numeroJugadores
+comment0.target=Juego(int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Juego\r\n
 comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
+comment1.target=void\ repartir(int)
+comment1.text=\r\n\ m\u00E9todo\ que\ reparte\ todas\ las\ cartas\ a\ los\ jugadores\ en\ la\ forma\ habitual\ \r\n\ en\ que\ se\ hace\ en\ un\ juego\ de\ cartas,\ es\ decir,\ barajando\ el\ mazo\ \r\n\ y\ entregando\ alternativamente\ cartas\ a\ los\ jugadores\ tomando\ siempre\ la\ primera\ carta\ del\ mazo.\ \r\n\ Al\ finalizar\ el\ reparto\ todos\ los\ jugadores\ deben\ tener\ el\ mismo\ n\u00FAmero\ de\ cartas,\ \r\n\ por\ lo\ que\ es\ posible,\ dependiendo\ del\ n\u00FAmero\ de\ estos,\r\n\ que\ queden\ cartas\ en\ el\ mazo.\r\n
+comment2.params=
+comment2.target=void\ mostrarCartasJugadores()
+comment2.text=\r\n\ muestra\ por\ pantalla\ el\ id\ del\ jugador\ junto\ a\ las\ cartas\ que\ tiene\ en\ la\ mano\r\n
+numComments=3

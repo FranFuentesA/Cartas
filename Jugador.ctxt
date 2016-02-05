@@ -1,8 +1,14 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Jugador()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Jugador\r\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
+comment0.params=id
+comment0.target=Jugador(int)
+comment0.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ jugador\r\n
+comment1.params=
+comment1.target=int\ getId()
+comment1.text=\r\ndevuelve\ el\ identificador\ del\ jugador.\r\n
+comment2.params=carta
+comment2.target=void\ recibirCarta(Carta)
+comment2.text=\r\n\ agrega\ la\ carta\ unaCarta\ a\ las\ que\ posee\ el\ jugador.\r\n
+comment3.params=
+comment3.target=java.util.ArrayList\ cartasQueTieneEnLaMano()
+comment3.text=\r\n\ devuelve\ una\ coleccion\ de\ cadenas\ de\ las\ cartas\ que\ tiene\ en\ la\ mano\r\n
+numComments=4

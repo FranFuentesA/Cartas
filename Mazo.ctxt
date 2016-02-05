@@ -2,4 +2,13 @@
 comment0.params=
 comment0.target=Mazo()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Mazo\r\n
-numComments=1
+comment1.params=
+comment1.target=void\ barajar()
+comment1.text=\r\n\ Metodo\ que\ desordena\ las\ cartas,\ permitiendo\ asi\ que\ queden\ barajadas.\r\n
+comment2.params=
+comment2.target=Carta\ tomarPrimera()
+comment2.text=\r\n\ Metodo\ que\ retorna\ la\ primera\ carta\ del\ mazo\ y\ modifica\ el\ estado\ del\ mazo\ para\ reflejar\ que\ esa\ carta\ ya\ no\ se\ encuentra\ en\ el\ mazo\r\n
+comment3.params=
+comment3.target=int\ quedan()
+comment3.text=\r\n\ Metodo\ que\ retorna\ el\ n\u00FAmero\ de\ cartas\ que\ quedan\ en\ el\ mazo.\r\n
+numComments=4

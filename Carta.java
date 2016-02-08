@@ -27,19 +27,20 @@ public class Carta
      */
     public String getNombre ()
     {
-        String nombre = valor + "de" + palo;
+        String nombre = valor + " de " + palo;
         if (valor == 11){
-            nombre = "Valet de " + palo;
+            nombre = " Valet de " + palo;
         }else if (valor == 12){
-            nombre = nombre = "dame de " + palo; 
+            nombre = nombre = " dame de " + palo; 
         }else if (valor == 13){
-            nombre = nombre = "Roy de " + palo; 
+            nombre = nombre = " Roy de " + palo; 
         }else if (valor == 1){
-            nombre = "As " + palo;          
+            nombre = " As " + palo;          
         }
         return nombre;
     }
-    
+    
+
     /**
      * Metodo que devuelve el valor de una carta
      */
@@ -47,7 +48,8 @@ public class Carta
     {
         return valor;
     }
-    
+    
+
     /**
      * Metodo que devuelve el palo de una carta
      */

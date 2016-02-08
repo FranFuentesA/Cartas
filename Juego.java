@@ -45,7 +45,7 @@ public class Juego
      * y entregando alternativamente cartas a los jugadores tomando siempre la primera carta del mazo. 
      * Al finalizar el reparto todos los jugadores deben tener el mismo número de cartas, 
      * por lo que es posible, dependiendo del número de estos,
-     * que queden cartas en el mazo.
+     * que queden cartas en el mazo.999
      */
     public void repartir(int y)
     {

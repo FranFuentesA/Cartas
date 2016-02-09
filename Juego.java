@@ -11,7 +11,7 @@ public class Juego
     //atributo que guarda el numero de jugadores
     private int numeroJugadores;
     //Lista que representa el mazo de cartas
-    private ArrayList<Carta> mazo;
+    private Mazo mazo;
     //Lista que añade jugadores al juego
     private ArrayList<Jugador> jugadores;
     /**
@@ -19,24 +19,29 @@ public class Juego
      */
     public Juego(int numeroJugadores)
     {
-        this.numeroJugadores = numeroJugadores;
+        mazo = new Mazo();//crea un mazo nuevo
+        jugadores = new ArrayList<>();//lista nueva de jugadores
+        int id = 1;//valor qu ele vamos a dar al primer jugador
         if (numeroJugadores >=2 && numeroJugadores <=8)//si introducimos un numero de jugadores entre los aceptados acepta, si no lo deja en 4 por defecto
         {
-            numeroJugadores = numeroJugadores;
+            while (id <= numeroJugadores)
+            {
+                jugadores.add(new Jugador(id));
+                id++;
+            }
+            numeroJugadores = numeroJugadores; 
+            
         }
-        else
+        else//si el numero de jugadores no es correcto añade cuatro jugadores por defecto
         {
+            jugadores.add(new Jugador(1));
+            jugadores.add(new Jugador(2));
+            jugadores.add(new Jugador(3));
+            jugadores.add(new Jugador(4));
             numeroJugadores = 4;
         }
-        ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
-        int contador = 0;
-        while(contador < numeroJugadores)
-        {
-            Jugador jugador = new Jugador(contador);
-            jugadores.add(jugador);
-            contador = contador + 1;
-        }
-        ArrayList<Carta> mazo = new ArrayList<Carta>();
+        this.numeroJugadores = numeroJugadores;
+        mazo.barajar();
     }
 
     /**
@@ -49,6 +54,8 @@ public class Juego
      */
     public void repartir(int y)
     {
+        int dadas = 0;
+        int corresponden = 52 / numeroJugadores;
 
     }
 

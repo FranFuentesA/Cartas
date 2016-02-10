@@ -30,7 +30,7 @@ public class Juego
                 id++;
             }
             numeroJugadores = numeroJugadores; 
-            
+
         }
         else//si el numero de jugadores no es correcto añade cuatro jugadores por defecto
         {
@@ -52,11 +52,29 @@ public class Juego
      * por lo que es posible, dependiendo del número de estos,
      * que queden cartas en el mazo.999
      */
-    public void repartir(int y)
+    public void repartir()
     {
-        int dadas = 0;
-        int corresponden = 52 / numeroJugadores;
+        if(mazo.quedan() % numeroJugadores == 0)
+        {
+            while(mazo.quedan() != mazo.quedan()% numeroJugadores )
+            {
+                for (Jugador jugador : jugadores)
+                {
+                    jugador.recibirCarta(mazo.tomarPrimera());
+                }
+            }
+        }
+        else 
+        {
+            while (mazo.quedan() != 0 )
+            {
+                for(Jugador jugador : jugadores)
+                {
+                    jugador.recibirCarta(mazo.tomarPrimera());
+                }
 
+            }
+        }
     }
 
     /**

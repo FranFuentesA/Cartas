@@ -10,7 +10,7 @@ public class Jugador
     // identificador del jugador
     private int id;
     //ArrayList que guarda las cartas que tiene en la mano el jugador
-    private ArrayList<Carta> mano;
+    private ArrayList<String> mano;
 
     /**
      * Constructor de objetos de la clase jugador
@@ -18,7 +18,7 @@ public class Jugador
     public Jugador(int id)
     {
         this.id = id;
-        ArrayList<Carta> mano = new ArrayList<>();
+        ArrayList<String> mano = new ArrayList<>();
 
     }
 
@@ -33,15 +33,15 @@ public class Jugador
     /**
      * agrega la carta unaCarta a las que posee el jugador.
      */
-    public void recibirCarta(Carta carta)
+    public void recibirCarta(Carta unaCarta)
     {
-        mano.add(carta);
+        mano.add(unaCarta.getNombre());
     }
 
     /**
      * devuelve una coleccion de cadenas de las cartas que tiene en la mano
      */
-    public ArrayList<Carta> cartasQueTieneEnLaMano()
+    public ArrayList<String> cartasQueTieneEnLaMano()
     {
         return mano;
     }

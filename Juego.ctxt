@@ -2,8 +2,8 @@
 comment0.params=numeroJugadores
 comment0.target=Juego(int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Juego\r\n
-comment1.params=y
-comment1.target=void\ repartir(int)
+comment1.params=
+comment1.target=void\ repartir()
 comment1.text=\r\n\ m\u00E9todo\ que\ reparte\ todas\ las\ cartas\ a\ los\ jugadores\ en\ la\ forma\ habitual\ \r\n\ en\ que\ se\ hace\ en\ un\ juego\ de\ cartas,\ es\ decir,\ barajando\ el\ mazo\ \r\n\ y\ entregando\ alternativamente\ cartas\ a\ los\ jugadores\ tomando\ siempre\ la\ primera\ carta\ del\ mazo.\ \r\n\ Al\ finalizar\ el\ reparto\ todos\ los\ jugadores\ deben\ tener\ el\ mismo\ n\u00FAmero\ de\ cartas,\ \r\n\ por\ lo\ que\ es\ posible,\ dependiendo\ del\ n\u00FAmero\ de\ estos,\r\n\ que\ queden\ cartas\ en\ el\ mazo.999\r\n
 comment2.params=
 comment2.target=void\ mostrarCartasJugadores()

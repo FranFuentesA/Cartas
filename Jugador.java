@@ -18,7 +18,7 @@ public class Jugador
     public Jugador(int id)
     {
         this.id = id;
-        ArrayList<String> mano = new ArrayList<>();
+        mano = new ArrayList<>();
 
     }
 
@@ -33,9 +33,9 @@ public class Jugador
     /**
      * agrega la carta unaCarta a las que posee el jugador.
      */
-    public void recibirCarta(Carta carta)
+    public void recibirCarta(Carta unaCarta)
     {
-        mano.add(carta.getNombre());
+        mano.add(unaCarta.getNombre());
     }
 
     /**

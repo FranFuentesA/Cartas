@@ -68,7 +68,7 @@ public class Mazo
     {
         Carta cartaUno = null;
 
-        if(mazoDeCartas.size() > -1)
+        if(mazoDeCartas.size() > 0)
         {
             cartaUno = mazoDeCartas.get(0);
             mazoDeCartas.remove(0);

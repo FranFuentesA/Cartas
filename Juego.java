@@ -52,8 +52,10 @@ public class Juego
      * por lo que es posible, dependiendo del número de estos,
      * que queden cartas en el mazo.999
      */
+
     public void repartir()
     {
+         {
         if ((mazo.quedan()%jugadores.size())== 0) {
             while (mazo.quedan()!=0) {
                 for (Jugador jugador : jugadores) {
@@ -68,6 +70,9 @@ public class Juego
                 }
             }
         }
+    }
+
+        
     }
 
     /**

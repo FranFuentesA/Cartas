@@ -33,9 +33,9 @@ public class Jugador
     /**
      * agrega la carta unaCarta a las que posee el jugador.
      */
-    public void recibirCarta(Carta unaCarta)
+    public void recibirCarta(Carta carta)
     {
-        mano.add(unaCarta.getNombre());
+        mano.add(carta.getNombre());
     }
 
     /**

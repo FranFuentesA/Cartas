@@ -25,7 +25,7 @@ public class Carta
     /**
      * Metodo que devuelve el nombre.
      */
-    public String getNombre ()
+    public String getNombre()
     {
         String nombre = valor + " de " + palo;
         if (valor == 11){

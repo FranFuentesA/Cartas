@@ -2,12 +2,6 @@
 comment0.params=
 comment0.target=Mazo()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Mazo\r\n
-<<<<<<< HEAD
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
-=======
 comment1.params=
 comment1.target=void\ barajar()
 comment1.text=\r\n\ Metodo\ que\ desordena\ las\ cartas,\ permitiendo\ asi\ que\ queden\ barajadas.\r\n
@@ -18,4 +12,3 @@ comment3.params=
 comment3.target=int\ quedan()
 comment3.text=\r\n\ Metodo\ que\ retorna\ el\ n\u00FAmero\ de\ cartas\ que\ quedan\ en\ el\ mazo.\r\n
 numComments=4
->>>>>>> ebe542f67e605fdf34a29a2d6256457b0a3adfb4

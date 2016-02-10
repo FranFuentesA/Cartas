@@ -54,25 +54,18 @@ public class Juego
      */
     public void repartir()
     {
-        if(mazo.quedan() % numeroJugadores == 0)
-        {
-            while(mazo.quedan() != mazo.quedan()% numeroJugadores )
-            {
-                for (Jugador jugador : jugadores)
-                {
+        if ((mazo.quedan()%jugadores.size())== 0) {
+            while (mazo.quedan()!=0) {
+                for (Jugador jugador : jugadores) {
                     jugador.recibirCarta(mazo.tomarPrimera());
                 }
             }
         }
-        else 
-        {
-            while (mazo.quedan() != 0 )
-            {
-                for(Jugador jugador : jugadores)
-                {
+        else {
+            while (mazo.quedan()!= mazo.quedan()%jugadores.size()) {
+                for (Jugador jugador : jugadores) {
                     jugador.recibirCarta(mazo.tomarPrimera());
                 }
-
             }
         }
     }

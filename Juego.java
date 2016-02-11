@@ -55,24 +55,22 @@ public class Juego
 
     public void repartir()
     {
-         {
-        if ((mazo.quedan()%jugadores.size())== 0) {
-            while (mazo.quedan()!=0) {
-                for (Jugador jugador : jugadores) {
-                    jugador.recibirCarta(mazo.tomarPrimera());
-                }
+        int cartasRepartidas = 0;
+        int id = 0;
+        int mazoEntero = 52;
+        int cartasParaCadaJugador = mazoEntero / jugadores.size();
+        if (mazoEntero % jugadores.size() != 0){
+            System.out.println("No hay cartas suficientes en el mazo para repartir todas entre los jugadores");
+        }
+        while (cartasRepartidas < (cartasParaCadaJugador * jugadores.size())){
+            jugadores.get(id).recibirCarta(mazo.tomarPrimera());
+            id = id + 1;
+            cartasRepartidas = cartasRepartidas + 1;
+            if (id == jugadores.size()){
+                id = 0;
             }
         }
-        else {
-            while (mazo.quedan()!= mazo.quedan()%jugadores.size()) {
-                for (Jugador jugador : jugadores) {
-                    jugador.recibirCarta(mazo.tomarPrimera());
-                }
-            }
-        }
-    }
 
-        
     }
 
     /**
@@ -80,10 +78,11 @@ public class Juego
      */
     public void mostrarCartasJugadores()
     {
-        for(Jugador jugador : jugadores)
-        {
-            System.out.println("Id.Jugador: "+jugador.getId()+"__Cartas en la Mano: "+jugador.cartasQueTieneEnLaMano());
-
+        int indice = 0;
+        while (indice < jugadores.size()){
+            System.out.println("Id de jugador--> " + jugadores.get(indice).getId() + "\nCartas en mano--> " + jugadores.get(indice).cartasQueTieneEnLaMano() + "\n");
+            indice = indice + 1;
         }
     }
 }
+
